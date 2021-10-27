@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
 </head>
+<style media="screen">
+  .desafio {
+    cursor: pointer;
+    list-style:none;
+  }
+</style>
 <body>
-
-  <script>
-    let entradaNombre = prompt("¿Cómo te llamas?");
-    let entradaPais = prompt(entradaNombre + ", ¿en que país naciste?");
-    let entradaNumero = prompt(entradaNombre + " de " + entradaPais + ", ingresa el número que quieras y le sumaré 40.. Estará en la consola");
-    console.log(parseFloat(entradaNumero) + 40);
-    alert("Adiós, " + entradaNombre + " de " + entradaPais);
-  </script>
+  <ul class="desafios">
+    <li class="desafio">
+      Desafío 1
+    </li>
+    <li class="desafio">
+      Desafío 2
+    </li>
+  </ul>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
