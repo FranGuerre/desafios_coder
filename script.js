@@ -22,8 +22,6 @@ function selector() {
           case 4:
 
             break;
-
-
         }
       }
     }
@@ -36,4 +34,13 @@ function desafio1() {
   let entradaNumero = prompt(entradaNombre + " de " + entradaPais + ", ingresa el número que quieras y le sumaré 40.. Estará en la consola");
   console.log(parseFloat(entradaNumero) + 40);
   alert("Adiós, " + entradaNombre + " de " + entradaPais);
+}
+
+function desafio2() {
+  let entradaNum = Number(prompt("Ingresá un número."));
+  if(entradaNum % 2 === 0) {
+    alert("El número que ingresaste es par.");
+  } else {
+    alert("El número que ingresaste es impar.");
+  }
 }
