@@ -46,7 +46,7 @@ function desafio2() {
 }
 
 function desafio3() {
-  let n, m;
+  let n, m, r;
   
   do {
     n = parseInt(prompt("Ingresa un nro entre 1 y 10 para ver sus multiplos"));
@@ -60,6 +60,7 @@ function desafio3() {
   
   for(let i = 0; i < 10; i++) {
     m = i + 1;
-    alert(m + " x " + n + "= " + n * m);
+    r = n * m;
+    alert(`${m} x ${n} = ${r}`);
   }
 }
