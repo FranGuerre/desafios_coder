@@ -51,7 +51,7 @@ function desafio3() {
   do {
     n = parseInt(prompt("Ingresa un nro entre 1 y 10."));
     
-    if((n < 2) {
+    if(n < 2) {
        alert("El numero que ingresaste es menor que 2");
     } else if(n > 9) {
       alert("El numero que ingresaste es mayor que 9");
