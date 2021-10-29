@@ -17,7 +17,7 @@ function selector() {
             desafio2();
             break;
           case 3:
-
+             desafio3();
             break;
           case 4:
 
@@ -47,7 +47,7 @@ function desafio2() {
 
 function desafio3() {
   let n;
-  
+  console.log("prueba 1");
   do {
     n = parseInt(prompt("Ingresa un nro entre 1 y 10."));
     
