@@ -46,11 +46,10 @@ function desafio2() {
 }
 
 function desafio3() {
-  let n;
+  let n, m;
   
   do {
     n = parseInt(prompt("Ingresa un nro entre 1 y 10 para ver sus multiplos"));
-    m;
     
     if(n < 2) {
        alert("El numero que ingresaste es menor que 2");
