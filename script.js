@@ -47,19 +47,20 @@ function desafio2() {
 
 function desafio3() {
   let n;
-  console.log("prueba 1");
+  
   do {
-    n = parseInt(prompt("Ingresa un nro entre 1 y 10."));
+    n = parseInt(prompt("Ingresa un nro entre 1 y 10 para ver sus multiplos"));
+    m;
     
     if(n < 2) {
        alert("El numero que ingresaste es menor que 2");
     } else if(n > 9) {
       alert("El numero que ingresaste es mayor que 9");
     }
-  }
-  while(n < 2 || n > 9); 
+  } while(n < 2 || n > 9); 
   
-  for(let i = 0; i < n; i++) {
-    alert(n * (i + 2));
+  for(let i = 0; i < 10; i++) {
+    m = i + 1;
+    alert(m + " x " + n + "= " + n * m);
   }
 }
