@@ -44,3 +44,22 @@ function desafio2() {
     alert("El número que ingresaste es impar.");
   }
 }
+
+function desafio3() {
+  let n;
+  
+  do {
+    n = parseInt(prompt("Ingresa un nro entre 1 y 10."));
+    
+    if((n < 2) {
+       alert("El numero que ingresaste es menor que 2");
+    } else if(n > 9) {
+      alert("El numero que ingresaste es mayor que 9");
+    }
+  }
+  while(n < 2 || n > 9); 
+  
+  for(let i = 0; i < n; i++) {
+    alert(n * (i + 2));
+  }
+}
