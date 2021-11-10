@@ -25,6 +25,9 @@ function selector() {
           case 5:
             funcionesRelacionadas();
             break;
+          case 6:
+            desafio6();
+            break;
         }
       }
     }
@@ -70,42 +73,53 @@ function desafio3() {
 
 //  Simulador Interactivo
 
+class Cuenta {
+  constructor(valor) {
+    this.valor = parseInt(valor),
+    this.propina = 0
+  }
+
+  calcularPropina (codPropina) {
+  console.log("prueba");
+   let propinaPor;
+   switch (codPropina) {
+     case 1:
+       propinaPor = 0.1;
+       break;
+     case 2:
+       propinaPor = 0.15;
+       break;
+     case 3:
+       propinaPor = 0.2;
+       break;
+     case 4:
+       alert("Error calculando");
+       return 0;
+   }
+   this.propina = this.valor * propinaPor;
+   return this.propina;
+ }
+}
 
 function simuladorInteractivo() {
-  let valorCuenta, propina, valorFinal;
+  let cuenta = new Cuenta();
+  let propina, valorFinal;
 
   do {
-    valorCuenta = parseInt(prompt("**CALCULADORA DE PROPINA**\rIngresa el valor de la cuenta"));
-  } while (isNaN(valorCuenta));
+    cuenta.valor = prompt("**CALCULADORA DE PROPINA**\rIngresa el valor de la cuenta");
+  } while (isNaN(cuenta.valor));
 
   do {
     propina = parseInt(prompt("**CALCULADORA DE PROPINA**\rIngresa la opción que desees\r1. 10%\r2. 15%\r3. 20%"));
   } while (isNaN(propina) || propina < 1 || propina > 3);
 
-  valorFinal = calcularPropina(valorCuenta, propina);
+  // valorFinal = cuenta.calcularPropina(propina);
+  cuenta.calcularPropina(propina);
 
-  alert(`Deberás dejar \$${valorFinal} de propina.`);
+  alert(`Deberás dejar \$${cuenta.propina} de propina.`);
 
 }
 
-function calcularPropina(cuenta, codPropina) {
-  let propina;
-  switch (codPropina) {
-    case 1:
-      propina = 0.1;
-      break;
-    case 2:
-      propina = 0.15;
-      break;
-    case 3:
-      propina = 0.2;
-      break;
-    case 4:
-      alert("Error calculando");
-      return 0;
-  }
-  return cuenta * propina;
-}
 
 
 //  Fin Simulador Interactivo
@@ -134,7 +148,7 @@ function cuantosAnimales() {
 
 function mostrarAnimales(n) {
 
-  for(let i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++) {
     mostrarAnimal(i);
   }
 }
